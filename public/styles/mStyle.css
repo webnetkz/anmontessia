@@ -92,9 +92,8 @@
       width: 50%;
       margin-bottom: 2rem;
     }
-    .imgMore {
-      margin-left: -2rem!important;
-      width: 130%!important;
+    .img-more {
+      width: 100%;
     }
     .modalOne {
       color: rgba(0, 0, 0, 0.9);

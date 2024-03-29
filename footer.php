@@ -8,15 +8,15 @@
     </div>
     <div class="w25">
         <p class="head">Свяжитесь с нами</p>
-        <a href="https://api.whatsapp.com/send?phone=<?=PHONE?>" style="display: flex; align-items: center;"><img src="/public/img/wp.png" ><span style="margin-left: 10px;">WhatsApp</span></a>
+        <a href="https://api.whatsapp.com/send?phone=<?=PHONE?>" target="_blank" style="display: flex; align-items: center;"><img src="/public/img/wp.png" ><span style="margin-left: 10px;">WhatsApp</span></a>
         <a href="tel:<?=PHONE?>" style="display: flex; align-items: center;"><img src="/public/img/phone.png" style="width: 24px;" ><span style="margin-left: 10px;">+ <?=PHONE?></span></a>
-        <a href="#" style="display: flex; align-items: center;"><img src="/public/img/mail.png" style="width: 24px;"><span style="margin-left: 10px;"><?=MAIL?></span></a>
+        <a href="mailto:<?=MAIL?>" style="display: flex; align-items: center;"><img src="/public/img/mail.png" style="width: 24px;"><span style="margin-left: 10px;"><?=MAIL?></span></a>
     </div>
-    <div  class="w25" style="display: flex; align-items: flex-end;">
-        <a href="<?=INST?>">
+    <div  class="w25" style="display: flex; align-items: flex-end; justify-content: flex-end;">
+        <a href="<?=INST?>" target="_blank">
             <img src="/public/img/instagram.png" style="margin: 5px;" class="h">
         </a>
-        <a href="">
+        <a href="<?=INST?>" target="_blank">
             <img src="/public/img/tiktok.png" style="margin: 5px;" class="h">
         </a>
     </div>

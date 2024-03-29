@@ -20,6 +20,8 @@
     transition-duration: var(--transitionDuration);
     outline: none;
     transition-duration: 600ms;
+
+    --z-content: 9999;
 }
 html, body {
     font-family: 'Gotham pro', sans-serif;
@@ -44,28 +46,26 @@ html, body {
     background-position: 50% 50%;
     z-index: -1;
 }
+.fillback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
 .sliderBg0 {
-    background: url("../img/bg.jpg");
+    background: url("../img/bg/bg.jpeg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.sliderBg1 {
+    background: url("../img/bg/bg2.jpg");
     background-size: cover;
     background-position: 50% 50%;
 }
 .sliderBg2 {
-    background: url("../img/bg2.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-}
-.sliderBg3 {
-    background: url("../img/bg.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-}
-.sliderBg4 {
-    background: url("../img/bg2.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-}
-.sliderBg5 {
-    background: url("../img/bg.jpg");
+    background: url("../img/bg/bg3.jpg");
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -131,11 +131,12 @@ header {
 .content {
     position: relative;
     margin-top: 60vh;
-    padding-left: 50px;
-    z-index: 9999;
+    padding: 1rem 0 1rem 50px;
+    z-index: var(--z-content);
     display: flex;
     flex-direction: column;
     justify-content: end;
+    backdrop-filter: blur(3px);
 }
 .content > h1 {
     text-transform: uppercase;
@@ -208,20 +209,21 @@ footer {
     align-items: flex-start;
     justify-content: center;
 }
-.imgMore {
+.img-more {
     border-radius: 9px;
+    height: 400px;
 }
-.likeImg {
+.like-img {
     width: 30px;
     height: 29px;
     padding: 5px;
     border-radius: 6px;
     background: rgba(0, 0, 0, 0.3);
     position: relative;
-    top: -330px;
-    left: 520px;
+    top: -290px;
+    left: 10px;
 }
-.likeImg > img {
+.like-img > img {
     width: 20px!important;
 }
 .hr {
@@ -362,18 +364,17 @@ footer a {
     z-index: 9999999999999999999999;
     box-shadow: 0 0 10px rgba(0,0,0, 0.4);
     transform: scale(0);
-  }
-    .inp {
+}
+.inp {
       width: 100%;
       border: 1px solid #000000;
       font-size: 1.3rem;
       padding: 3px;
       background: #DAD9D9;
       border-radius: 7px;
-    }
-    .lab {
+}
+.lab {
       display: block;
       color: #000;
       margin-top: 20px;
-    }
-  
+}

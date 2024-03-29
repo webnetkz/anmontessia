@@ -82,68 +82,36 @@ function showI() {
     document.querySelector('#i1').classList.add('dashActive');
     let sliderNow = document.querySelector('.sliderBg');
     sliderNow.classList.add('sliderBg0');
+    sliderNow.classList.remove('sliderBg1');
     sliderNow.classList.remove('sliderBg2');
-    sliderNow.classList.remove('sliderBg3');
-    sliderNow.classList.remove('sliderBg4');
-    sliderNow.classList.remove('sliderBg5');
     content.innerHTML = 'Первый слайд';
 }
 
 
-function showI2() {
+function showI1() {
     let content = document.querySelector('#threeSlide');
     document.querySelector('.dashActive').classList.remove('dashActive');
     document.querySelector('#i2').classList.add('dashActive');
     let sliderNow = document.querySelector('.sliderBg');
     sliderNow.classList.add('sliderBg2');
     sliderNow.classList.remove('sliderBg0');
+    sliderNow.classList.remove('sliderBg2');
     sliderNow.classList.remove('sliderBg3');
-    sliderNow.classList.remove('sliderBg4');
-    sliderNow.classList.remove('sliderBg5');
 
     content.innerHTML = 'Второй слайд';
 }
 
-function showI3() {
+function showI2() {
     let content = document.querySelector('#threeSlide');
     document.querySelector('.dashActive').classList.remove('dashActive');
     document.querySelector('#i3').classList.add('dashActive');
     let sliderNow = document.querySelector('.sliderBg');
     sliderNow.classList.add('sliderBg3');
     sliderNow.classList.remove('sliderBg0');
+    sliderNow.classList.remove('sliderBg1');
     sliderNow.classList.remove('sliderBg2');
-    sliderNow.classList.remove('sliderBg4');
-    sliderNow.classList.remove('sliderBg5');
 
     content.innerHTML = 'Третий слайд';
-}
-
-function showI4() {
-    let content = document.querySelector('#threeSlide');
-    document.querySelector('.dashActive').classList.remove('dashActive');
-    document.querySelector('#i4').classList.add('dashActive');
-    let sliderNow = document.querySelector('.sliderBg');
-    sliderNow.classList.add('sliderBg4');
-    sliderNow.classList.remove('sliderBg0');
-    sliderNow.classList.remove('sliderBg2');
-    sliderNow.classList.remove('sliderBg3');
-    sliderNow.classList.remove('sliderBg5');
-
-    content.innerHTML = 'Четвертый слайд';
-}
-
-function showI5() {
-    let content = document.querySelector('#threeSlide');
-    document.querySelector('.dashActive').classList.remove('dashActive');
-    document.querySelector('#i5').classList.add('dashActive');
-    let sliderNow = document.querySelector('.sliderBg');
-    sliderNow.classList.add('sliderBg5');
-    sliderNow.classList.remove('sliderBg0');
-    sliderNow.classList.remove('sliderBg2');
-    sliderNow.classList.remove('sliderBg3');
-    sliderNow.classList.remove('sliderBg4');
-
-    content.innerHTML = 'Пятый слайд';
 }
 
 window.addEventListener('scroll', headerMin);

@@ -46,7 +46,7 @@
 		let argEl = document.querySelector('#'+arg);
 			if(elem && !argEl) {
 				cca.innerHTML += `<div><div style="display: flex; justify-content: space-between;">
-				<img src="/public/img/bg.jpg" class="imgCart">
+				<img src="/public/img/bg.jpeg" class="imgCart">
 				<p style="margin-left: -60px;">
 					Ten Yes <br>
 					shampoo <br>

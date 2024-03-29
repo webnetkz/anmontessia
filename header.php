@@ -17,7 +17,7 @@ require_once './settings.php';
 </head>
 <body>
 	<div class="sliderBg sliderBg0">
-		
+		<div class="fillback"></div>
 	</div>
 	
 	<header>
