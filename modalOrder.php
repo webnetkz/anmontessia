@@ -5,7 +5,7 @@
 			<img src="/public/img/close.png" style="float: right; width: 24px;" onclick="modalClose();">
 		</div>
 		<div style="display: flex; align-items: flex-start">
-			<div style="margin-right: 30px;border-radius: 12px; background: url('/public/img/bg.jpg'); background-size: cover; min-width: 400px; margin-left: 40px; min-height: 500px; background-position: 50% 50%;"></div>
+			<div style="margin-right: 30px;border-radius: 12px; background: url('/public/img/bg/bg.jpeg'); background-size: cover; min-width: 400px; margin-left: 40px; min-height: 500px; background-position: 50% 50%;"></div>
 			<div style="width: 450px">
 				<h2 style="padding-bottom: 10px; border-bottom: 1px solid black; width: 100%;">TENYES SHAMPOO</h2>
 				<p style="font-size: 1.1rem; margin-top: 10px;">200 мл. 5000 тг</p>

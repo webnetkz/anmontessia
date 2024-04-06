@@ -264,6 +264,9 @@ footer a {
     position: relative;
     animation: showElem 0.6s linear;
 }
+.component-reverse .img-more {
+    margin-bottom: 60px;
+}
 @keyframes showElem {
     0% {
         opacity: 0;
@@ -275,7 +278,7 @@ footer a {
     }
 }
 .sliderBg1 {
-    background: url("../img/bg.jpg");
+    background: url("../img/bg/bg.jpeg");
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -326,7 +329,7 @@ footer a {
     padding: 50px;
 }
 .imgShowModalCard {
-  margin-right: 30px;border-radius: 12px; background: url('/public/img/bg.jpg'); background-size: cover; min-width: 400px; margin-left: 40px; min-height: 500px; background-position: 50% 50%;
+  margin-right: 30px;border-radius: 12px; background: url('/public/img/bg/bg.jpeg'); background-size: cover; min-width: 400px; margin-left: 40px; min-height: 500px; background-position: 50% 50%;
 }
 .counter {
     padding: 7px;

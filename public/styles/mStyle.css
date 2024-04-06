@@ -108,17 +108,16 @@
     }
     .imgShowModalCard {
       margin-bottom: 1rem;
-      margin-right: 0px;border-radius: 12px; background: url('/public/img/bg.jpg'); background-size: cover; min-width: 100%; margin-left: 0px; min-height: 300px; background-position: 50% 50%;
     }
-    .componentReverse {
+    .component-reverse {
       flex-direction: column-reverse;
     }
-    .componentReverse > .showElem {
+    .component-reverse > .showElem {
       margin-top: 100px;
     }
-    .componentReverse .like-img {
+    .component-reverse .like-img {
       margin-left: 0px!important;
-      top: -225px!important;
+      top: -290px!important;
     }
     .showLastModal {
       position: fixed;

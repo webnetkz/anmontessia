@@ -71,7 +71,7 @@
 			</div>
 		</div>
 		<hr>
-		<div class="component componentReverse" style="visibility: hidden;">
+		<div class="component component-reverse" style="visibility: hidden;">
 			<div style="visibility: hidden;">
 				<h2>Бананы в шоколаде</h2>
 				<br><br>
@@ -93,11 +93,12 @@
 			</div>
 			<div>
 				<img src="/public/img/index/banans.png" style="margin-left: 50px;" class="img-more">
-				<div class="h like-img" style="margin-left: 50px; margin-top: -100px; top: -290px;" onclick="localStorage.setItem('l2', 1);  updateFavorites();  updateElementsFavorites('a2', 'l2');">
+				<div class="h like-img" style="margin-left: 50px; margin-top: -100px; top: -350px;" onclick="localStorage.setItem('l2', 1);  updateFavorites();  updateElementsFavorites('a2', 'l2');">
 					<img src="/public/img/likeWhite.png" style="width: 40px;">
 				</div>
 			</div>
 		</div>
+		<hr>
 		<div class="component" style="visibility: hidden;">
 			<div>
 				<img src="/public/img/index/finiki.jpeg" style="margin-right: 50px;" class="img-more">
