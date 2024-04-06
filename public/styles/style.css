@@ -220,11 +220,18 @@ footer {
     border-radius: 6px;
     background: rgba(0, 0, 0, 0.3);
     position: relative;
-    top: -290px;
+    top: -390px;
     left: 10px;
 }
 .like-img > img {
     width: 20px!important;
+}
+img[src='/public/img/close.png']:hover {
+    cursor: pointer;
+}
+.show[onclick="modalShow();"],
+.show {
+    display: none;
 }
 .hr {
     width: 90%;
@@ -319,6 +326,9 @@ footer a {
 }
 .counter:hover {
     cursor: pointer;
+}
+.counter > span {
+    user-select: none;
 }
 .counterCart, .counterLike {
     color: #A6CE39;

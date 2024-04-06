@@ -20,19 +20,19 @@
 		let allPrice = 0;
 		let g1 = localStorage.getItem('g1');
 			if(g1) {
-				allPrice += Number(g1) * 5000;
+				allPrice += Number(g1) * 25000;
 			}
 		let g2 = localStorage.getItem('g2');
 			if(g2) {
-				allPrice += Number(g2) * 5000;
+				allPrice += Number(g2) * 31000;
 			}
 		let g3 = localStorage.getItem('g3');
 			if(g3) {
-				allPrice += Number(g3) * 5000;
+				allPrice += Number(g3) * 28000;
 			}
 		let g4 = localStorage.getItem('g4');
 			if(g4) {
-				allPrice += Number(g4) * 5000;
+				allPrice += Number(g4) * 55000;
 			}
 
 		resPrice.innerText = allPrice;
@@ -41,21 +41,47 @@
 
 	function updateCart(elem, arg) {
 		
+		let nameProduct = '';
+		let image = '';
+		let price = 9999;
+
+		switch (arg)
+		{
+			case 'g1':
+				nameProduct = 'Клубника в шоколаде';
+				image = '/public/img/index/strawbery.png';
+				price = 25000;
+			break;
+			case 'g2':
+				nameProduct = 'Бананы в шоколаде';
+				image = '/public/img/index/banans.png';
+				price = 31000;
+			break;
+			case 'g3':
+				nameProduct = 'Финики с орехами в шоколаде';
+				image = '/public/img/index/finiki.jpeg';
+				price = 28000;
+			break;
+			case 'g4':
+				nameProduct = 'Amour ассорти';
+				image = '/public/img/index/finiki.jpeg';
+				price = 55000;
+			break;
+		}
+
 		let cca = document.querySelector('.showElems');
 		let res = localStorage.getItem(arg);
 		let argEl = document.querySelector('#'+arg);
 			if(elem && !argEl) {
 				cca.innerHTML += `<div><div style="display: flex; justify-content: space-between;">
-				<img src="/public/img/bg.jpeg" class="imgCart">
-				<p style="margin-left: -60px;">
-					Ten Yes <br>
-					shampoo <br>
-					200 мл.
+				<img src="${image}" class="imgCart">
+				<p style="margin-left: 5px; width: calc(100% - 60px)">
+					${nameProduct}
 				</p>
 				<img src="/public/img/close.png" style="height: 20px;" onclick="localStorage.removeItem('`+arg+`'); this.parentNode.parentNode.remove(); updateCounter();">
 			</div>
 			<div style="display: flex; align-items: flex-end; position: relative; top: -10px;">
-				<p style="font-size: 1.3rem;">5000 тг.</p>
+				<p style="font-size: 1.3rem;">${price} тг.</p>
 				<div class="counter" style="margin-left: 30px; margin-bottom: 0;">
 					<span onclick="down(this)">-</span>
 					<span class="count" id="`+arg+`">`+res+`</span>

@@ -15,42 +15,61 @@
 
 <script>
 
-	function orderPriceFavorites() {
+	orderPriceFavorites();
+
+	function orderPriceFavorites()
+	{
 		let resPrice = document.querySelector('#resPriceFavorites');
 		let allPrice = 0;
 		let g1 = localStorage.getItem('l1');
 			if(g1) {
-				allPrice += Number(g1) * 5000;
+				allPrice += Number(g1) * 25000;
 			}
 		let g2 = localStorage.getItem('l2');
 			if(g2) {
-				allPrice += Number(g2) * 5000;
+				allPrice += Number(g2) * 31000;
 			}
 		let g3 = localStorage.getItem('l3');
 			if(g3) {
-				allPrice += Number(g3) * 5000;
-			}
-		let g4 = localStorage.getItem('l4');
-			if(g4) {
-				allPrice += Number(g4) * 5000;
+				allPrice += Number(g3) * 28000;
 			}
 
 		resPrice.innerText = allPrice;
 	}
-	orderPriceFavorites();
 
-	function updateElementsFavorites(elem, arg) {
-		
+	function updateElementsFavorites(elem, arg)
+	{
+		let nameProduct = '';
+		let image = '';
+		let price = 9999;
+
+		switch (arg)
+		{
+			case 'l1':
+				nameProduct = 'Клубника в шоколаде';
+				image = '/public/img/index/strawbery.png';
+				price = 25000;
+			break;
+			case 'l2':
+				nameProduct = 'Бананы в шоколаде';
+				image = '/public/img/index/banans.png';
+				price = 31000;
+			break;
+			case 'l3':
+				nameProduct = 'Финики с орехами в шоколаде';
+				image = '/public/img/index/finiki.jpeg';
+				price = 28000;
+			break;
+		}
+
 		let cca = document.querySelector('.showElemsFavorites');
 		let res = localStorage.getItem(arg);
 		let argEl = document.querySelector('#'+arg);
 			if(elem && !argEl) {
 				cca.innerHTML += `<div><div style="display: flex; justify-content: space-between;">
-				<img src="/public/img/bg.jpg" class="imgCart">
-				<p style="margin-left: -60px;">
-					Ten Yes <br>
-					shampoo <br>
-					200 мл.
+				<img src="${image}" class="imgCart">
+				<p style="margin-left: 5px; width: calc(100% - 60px)">
+					${nameProduct}
 				</p>
 				<img src="/public/img/close.png" style="height: 20px;" onclick="localStorage.removeItem('`+arg+`'); this.parentNode.parentNode.remove(); updateFavorites();">
 			</div>
