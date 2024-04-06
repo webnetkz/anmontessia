@@ -81,10 +81,9 @@ function showI() {
     document.querySelector('.dashActive').classList.remove('dashActive');
     document.querySelector('#i1').classList.add('dashActive');
     let sliderNow = document.querySelector('.sliderBg');
-    sliderNow.classList.add('sliderBg0');
-    sliderNow.classList.remove('sliderBg1');
-    sliderNow.classList.remove('sliderBg2');
-    content.innerHTML = 'Первый слайд';
+    sliderNow.classList.add('sliderBg2');
+    sliderNow.classList.remove('sliderBg3');
+    content.innerHTML = 'Бананы в шоколаде';
 }
 
 
@@ -94,11 +93,10 @@ function showI1() {
     document.querySelector('#i2').classList.add('dashActive');
     let sliderNow = document.querySelector('.sliderBg');
     sliderNow.classList.add('sliderBg2');
-    sliderNow.classList.remove('sliderBg0');
-    sliderNow.classList.remove('sliderBg2');
+    sliderNow.classList.remove('sliderBg1');
     sliderNow.classList.remove('sliderBg3');
 
-    content.innerHTML = 'Второй слайд';
+    content.innerHTML = 'Клубника в шоколаде';
 }
 
 function showI2() {
@@ -107,11 +105,10 @@ function showI2() {
     document.querySelector('#i3').classList.add('dashActive');
     let sliderNow = document.querySelector('.sliderBg');
     sliderNow.classList.add('sliderBg3');
-    sliderNow.classList.remove('sliderBg0');
     sliderNow.classList.remove('sliderBg1');
     sliderNow.classList.remove('sliderBg2');
 
-    content.innerHTML = 'Третий слайд';
+    content.innerHTML = 'Финики с орехами в шоколаде';
 }
 
 window.addEventListener('scroll', headerMin);

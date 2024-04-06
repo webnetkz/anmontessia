@@ -9,8 +9,6 @@
 		<div style="display: flex; justify-content: flex-end; align-items: flex-end;">
 			<span style="font-size: 0.7rem; margin-right: 10px;">Итого</span><h1 id="resPriceFavorites">0</h1><h1>тг.</h1>
 		</div>
-
-		<span class="h" style=" width: 225px; margin-left: 50px; margin-top: 50px; text-align: center;padding: 5px;color: white; background: black; border-radius: 5px;">Оформление заказа</span>
 	</div>
 
 <script>

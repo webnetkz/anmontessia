@@ -274,6 +274,21 @@ footer a {
         top: 0;
     }
 }
+.sliderBg1 {
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.sliderBg2 {
+    background: url("../img/index/strawbery.png");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.sliderBg3 {
+    background: url("../img/index/finiki.jpeg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
 #cart, #favorites {
     position: fixed;
     right: -500px;

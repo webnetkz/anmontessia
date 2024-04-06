@@ -9,48 +9,35 @@
         background-position: 50% 50%;
         z-index: -1;
     }
-    .sliderBg0 {
-        background: url("../img/bg.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-    .sliderBg2 {
-        background: url("../img/bg2.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-    .sliderBg3 {
-        background: url("../img/bg.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-    .sliderBg4 {
-        background: url("../img/bg2.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-    }
-    .sliderBg5 {
-        background: url("../img/bg.jpg");
-        background-size: cover;
-        background-position: 50% 50%;
-    }
     .logo > img {
         padding: 10px;
         padding-top: 0;
-        width: 30vw;
+        width: 15vw;
+    }
+    .logo > h1 {
+      font-size: 1rem;
     }
     .mcarticon {
         height: 30px;
     }
-    .mmenu {
-        padding: 5px;
+    .menu {
+        padding: 0px;
         display: flex;
         align-items: center;
     }
-    .mmenu > * {
-        margin: 10px;
+    .menu > * {
+        margin: 5px;
         display: flex;
         align-items: center;
+    }
+    .forIcon img {
+      height: 30px;
+    }
+    .wp {
+      padding-right: 10px;
+    }
+    .catalog {
+      display: none;
     }
     .content {
         position: relative;
@@ -94,6 +81,8 @@
     }
     .img-more {
       width: 100%;
+      height: 100%;
+      margin-left: 0!important;
     }
     .modalOne {
       color: rgba(0, 0, 0, 0.9);
@@ -103,6 +92,9 @@
       padding: 50px;
       height: 100%!important;
       overflow-y: auto;
+    }
+    .like-img {
+      top: -240px;
     }
     .modalOne {
       width: 100%;
@@ -118,7 +110,16 @@
       margin-bottom: 1rem;
       margin-right: 0px;border-radius: 12px; background: url('/public/img/bg.jpg'); background-size: cover; min-width: 100%; margin-left: 0px; min-height: 300px; background-position: 50% 50%;
     }
-
+    .componentReverse {
+      flex-direction: column-reverse;
+    }
+    .componentReverse > .showElem {
+      margin-top: 100px;
+    }
+    .componentReverse .like-img {
+      margin-left: 0px!important;
+      top: -225px!important;
+    }
     .showLastModal {
       position: fixed;
       width: 90%;

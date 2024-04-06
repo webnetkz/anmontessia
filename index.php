@@ -71,16 +71,12 @@
 			</div>
 		</div>
 		<hr>
-		<div class="component" style="visibility: hidden;">
+		<div class="component componentReverse" style="visibility: hidden;">
 			<div style="visibility: hidden;">
 				<h2>Бананы в шоколаде</h2>
 				<br><br>
-				<p>Шампунь из натуральных элементов камня <br>
-				шунгит. Бережно очищает, не нарушая <br>
-				естественную защиту волос, способствует <br>
-				регенерации иукреплению волосяной <br>
-				луковицы, сокращает потерю волос
-				<br><br><br><br><br><br>
+				<p>
+					Лучшие спелые бананы в нежном шоколаде
 				</p>
 				<br><br>
 				<p style="font-size: 1.1rem;">31 000 тг</p>
