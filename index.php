@@ -142,7 +142,7 @@
     <span class="lab">Имя</span>
     <input type="tel"  name="name" class="inp" required>
     <span class="lab">Телефон</span>
-    <input type="text" class="inp" name="phone" required>
+    <input type="tel" class="inp" name="phone" required>
     <span class="lab">Комментарий</span>
     <textarea name="comment" id="" cols="30" rows="2" class="inp"></textarea>
     <button class="bord" style="color: white; background: black; border: 1px solid black; font-size: 1.3rem; margin: 15px auto;" type="submit">Заказать</button>
