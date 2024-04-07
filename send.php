@@ -16,17 +16,17 @@ if(isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['phone']) && 
     $comment = clearVar($_POST['comment']);
   } else { $comment = 'нет'; }
   if(isset($_POST['g1']) && !empty($_POST['g1'])) {
-    $g1 = clearVar($_POST['g1']);
-  } else { $g1 = 'нет'; }
+    $product1 = "Клубника: " . clearVar($_POST['g1']);
+  } else { $product1 = ''; }
   if(isset($_POST['g2']) && !empty($_POST['g2'])) {
-    $g2 = clearVar($_POST['g2']);
-  } else { $g2 = 'нет'; }
+    $product2 = "Бананы: " . clearVar($_POST['g2']);
+  } else { $product2 = ''; }
   if(isset($_POST['g3']) && !empty($_POST['g3'])) {
-    $g3 = clearVar($_POST['g3']);
-  } else { $g3 = 'нет'; }
+    $product3 = "Финики: " . clearVar($_POST['g3']);
+  } else { $product3 = ''; }
   if(isset($_POST['g4']) && !empty($_POST['g4'])) {
-    $g4 = clearVar($_POST['g4']);
-  } else { $g4 = 'нет'; }
+    $product4 = "Set:" . clearVar($_POST['g4']);
+  } else { $product4 = ''; }
 
   $body = "
 	**$name**\n
@@ -34,10 +34,10 @@ if(isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['phone']) && 
 	-----\n
 	$comment\n
 	-----\n
-	Клубника: $g1
- 	Бананы: $g2
- 	Финики: $g3
-	Set: $g4
+	$product1\n
+ 	$product2\n
+ 	$product3\n
+  $product4\n
   ";
   
   $bot_token = TELEGRAM_TOKEN;

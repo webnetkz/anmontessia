@@ -1,8 +1,7 @@
 @import url('./libs/scrollWhite.css');
-@import url('./../Gotham.ttf');
+@import url('../Gotham.ttf');
 
 * {
-    /* Переменные */
     --transitionDuration: 500ms;
 
     --colorZeroDark: rgb(255, 255, 255);
