@@ -2,13 +2,13 @@
 
 	<div class="content" id="oneSlide">
 		<h1 style="font-weight: 900;"><?=APP?></h1>
-		<h2 style="font-weight: 100;">Сладкие комплименты</h2>
-		<h2 style="font-weight: 100;">Для самых близких</h2>
+		<h2 style="font-weight: 100;">НАТУРАЛЬНЫЕ ИНГРЕДИЕНТЫ</h2>
+		<h2 style="font-weight: 100;">Использование лучших натуральных ингредиентов при приготовлении клубники в шоколаде позволяет добиться того самого, изысканного и нежного вкуса из-за которого данный вид десерта пользуется популярностью во всем мире.</h2>
 	</div>
 
 	<div class="content" id="twoSlide">
-		<h1 style="font-weight: 100;">Индивидуальные заказы</h1>
-		<h2 style="font-weight: 100;">Поможем воплотить вашу фантазию</h2>
+		<h1 style="font-weight: 100;">АППЕТИТНАЯ И ВКУСНАЯ</h1>
+		<h2 style="font-weight: 100;">Превосходный вкус клубники в шоколаде от "Anmotessia" Вы не сможете забыть даже спустя годы и Вам обязательно захочется заказать еще. Аппетитный внешний вид и праздничный дизайн клубники в шоколаде способен соблазнить любого насладиться вкусом этого десерта.</h2>
 	</div>
 
 	<div class="content" id="threeSlide">
@@ -50,12 +50,9 @@
 				</div>
 			</div>
 			<div>
-				<h2>Клубника в шоколаде</h2>
+				<h2><?=$product_name1?></h2>
 				<br><br>
-				<p>Отборная клубника <br>
-				в нежном Бельгийском шоколаде <br>
-				с неповторимым оформлением <br>
-				</p>
+				<p><?=$product_description1?></p>
 				<br><br>
 				<p style="font-size: 1.1rem;">25 000 тг</p>
 				<br><br>
@@ -73,11 +70,9 @@
 		<hr>
 		<div class="component component-reverse" style="visibility: hidden;">
 			<div style="visibility: hidden;">
-				<h2>Бананы в шоколаде</h2>
+				<h2><?=$product_name3?></h2>
 				<br><br>
-				<p>
-					Лучшие спелые бананы в нежном шоколаде
-				</p>
+				<p><?=$product_description3?></p>
 				<br><br>
 				<p style="font-size: 1.1rem;">31 000 тг</p>
 				<br><br>
@@ -107,12 +102,9 @@
 				</div>
 			</div>
 			<div>
-				<h2>Финики в шоколаде c орехими</h2>
+				<h2><?=$product_name2?></h2>
 				<br><br>
-				<p>Отборные финики<br>
-				в нежном Бельгийском шоколаде с потрясающими орехами<br>
-				и неповторимым оформлением <br>
-				</p>
+				<p><?=$product_description2?></p>
 				<br><br>
 				<p style="font-size: 1.1rem;">28 000 тг</p>
 				<br><br>

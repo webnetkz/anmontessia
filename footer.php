@@ -16,9 +16,9 @@
         <a href="<?=INST?>" target="_blank">
             <img src="/public/img/instagram.png" style="margin: 5px;" class="h">
         </a>
-        <a href="<?=INST?>" target="_blank">
+        <!-- <a href="<?=INST?>" target="_blank">
             <img src="/public/img/tiktok.png" style="margin: 5px;" class="h">
-        </a>
+        </a> -->
     </div>
 </div>
 </footer>
